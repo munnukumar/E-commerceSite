@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+</head>
+<body style="background-color:black">
+    <h1 style="text-align: center; color:blue; font-size:50px;">E-COMMERCE SITE</h1>
+    <hr style="color:red; height:10px; background-color:rgb(7, 248, 216)">
+    <br>
+   
+    <br>
+    <div style="color:whitesmoke; font-size: 30px;">
+        <label for="amount">Enter Price</label>
+        <input style= "font-size: 25px;" type="number" id="amount" placeholder="Enter Price">
+        <br><br>
+        <label for="item">Product Name:</label>
+        <input style= "font-size: 25px;" type="text" id="item" placeholder="Enter Product Name">
+        <button onclick="addItem()" style="border: none; background-color:aqua; font-size:25px">Add Item</button>
+    </div>
+    <h2 style="color: rgb(61, 243, 6)">Product's List</h2>
+    
+    <div id="itemList" style="color:whitesmoke; font-size: 25px;"></div>
+    <br>
+    <hr style="color:red; height:10px; background-color:blue">
+    <div style="color:whitesmoke; text-align: center; font-size: 30px;">
+        <label>TotalPrice:</label>
+        <span id="totalitemDatas">0</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+
